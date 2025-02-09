@@ -139,22 +139,6 @@ class SquashSimulation {
         this.canvas.addEventListener('mousemove', (e) => this.handleMouseMove(e));
         this.canvas.addEventListener('mouseup', (e) => this.handleMouseUp(e));
 
-        // Gestion du bouton "next step" s'il existe
-        const nextStepButton = document.getElementById('nextStep');
-        if (nextStepButton) {
-            nextStepButton.addEventListener('click', () => this.nextStep());
-        }
-
-        // Ajouter les boutons de contrôle
-        const pauseButton = document.getElementById('pauseButton');
-        const resumeButton = document.getElementById('resumeButton');
-        if (pauseButton) {
-            pauseButton.addEventListener('click', () => this.pauseAnimation());
-        }
-        if (resumeButton) {
-            resumeButton.addEventListener('click', () => this.resumeAnimation());
-        }
-
         // Ajouter les boutons pour l'enregistrement
         const startRecordButton = document.getElementById('startRecord');
         const stopRecordButton = document.getElementById('stopRecord');
